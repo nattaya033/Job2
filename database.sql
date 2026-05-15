@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS skru_education CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE skru_education;
+
+CREATE TABLE IF NOT EXISTS highlights (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  image_url VARCHAR(500) NOT NULL,
+  link_url VARCHAR(500) NOT NULL,
+  start_date DATE NOT NULL,
+  end_date DATE NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
